@@ -1,0 +1,51 @@
+.container {
+  width: 100px;
+  height: 100px;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.front {
+  transform: rotateY(0deg) translateZ(50px);
+  background-image: url("/icons/cplus.jpg");
+  background-size: contain;
+}
+.right {
+  transform: rotateY(90deg) translateZ(50px);
+  background-image: url("/icons/ts.png");
+  background-size: cover;
+}
+.back {
+  transform: rotateY(180deg) translateZ(50px);
+  background-image: url("/icons/next.png");
+  background-size: cover;
+}
+.left {
+  transform: rotateY(-90deg) translateZ(50px);
+  background-image: url("/icons/psql.svg");
+  background-size: contain;
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(50px);
+  background-image: url("/icons/mongo1.png");
+  background-size: contain;
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+  background-image: url("/icons/node.png");
+  background-size: contain;
+}
