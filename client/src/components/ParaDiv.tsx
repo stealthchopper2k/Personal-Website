@@ -6,6 +6,7 @@ import { LiaNode } from "react-icons/lia";
 import { SiMongodb } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 import { BiLogoCPlusPlus } from "react-icons/bi";
+import { BiLogoGraphql } from "react-icons/bi";
 
 export default function ParaDiv() {
   return (
@@ -27,19 +28,22 @@ export default function ParaDiv() {
           <FaReact size={96} />
         </li>
         <li>
-          <SiTypescript size={96}/>
+          <SiTypescript size={96} />
         </li>
         <li>
-          <LiaNode size={96}/>
+          <LiaNode size={96} />
         </li>
         <li>
-          <SiMongodb size={96}/>
+          <SiMongodb size={96} />
         </li>
         <li>
-          <SiPostgresql size={96}/>
+          <SiPostgresql size={96} />
         </li>
         <li>
-          <BiLogoCPlusPlus size={96}/>
+          <BiLogoCPlusPlus size={96} />
+        </li>
+        <li className="">
+          <BiLogoGraphql size={96} />
         </li>
       </ul>
     </motion.div>

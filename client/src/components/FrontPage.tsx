@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import Badges from "./MODBADGE";
 import { Typewriter } from "react-simple-typewriter";
 import { motion, useInView } from "framer-motion";
-import NavMenu from "./framer/navigation/MenuAnim";
+import Example from "./framer/navigation/Example";
 
 function FrontPage() {
   const ref = useRef(null);
@@ -19,26 +19,24 @@ function FrontPage() {
         opacity: isInView ? 1 : 0,
       }}
     >
-      <NavMenu />
+      <Example />
       <div className="flex flex-col w-full h-full bg-gray-900 items-center justify-center mt-10 flex-shrink-1">
         <div className="text-center">
-          <h1 className="text-white text-[10rem]">
-            Leonids Jefimovs
-            </h1>
-            <motion.div
-          className="relative"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.8,
-            delay: 1.3,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
-        >
-          <Badges />
-        </motion.div>
+          <h1 className="text-white text-[10rem]">Leonids Jefimovs</h1>
+          <motion.div
+            className="relative"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 1.3,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <Badges />
+          </motion.div>
         </div>
-        </div>
+      </div>
     </div>
   );
 }

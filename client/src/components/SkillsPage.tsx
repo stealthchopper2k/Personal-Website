@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import SpinnyBox from "./framer/Cube";
-import NavMenu from "./framer/navigation/MenuAnim";
+import NavMenu from "./framer/navigation/Example";
 import ParaDiv from "./ParaDiv";
 
 function SkillsPage() {
@@ -20,12 +20,12 @@ function SkillsPage() {
       }}
     >
       <NavMenu />
-      <div className="flex flex-row w-full h-full bg-gray-900 gap-10 items-center justify-center mt-10 p-24">
+      <div className="flex flex-row w-full h-full bg-gray-900 gap-10 items-center justify-center mt-10 p-40">
         <div className="flex items-center justify-center w-3/4">
           <ParaDiv />
         </div>
         <div className="flex items-start justify-start w-1/4">
-        <SpinnyBox />
+          <SpinnyBox />
         </div>
       </div>
     </div>

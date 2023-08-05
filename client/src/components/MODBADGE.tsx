@@ -24,7 +24,7 @@ export default function Badges() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="text-xl">
+        <div className="text-3xl">
           <Typewriter
             deleteSpeed={50}
             typeSpeed={100}
@@ -40,7 +40,9 @@ export default function Badges() {
         </div>
       </motion.div>
       <ul className="flex flex-row justify-center items-center mt-[-3rem]" ref={ref}>
-        <li className="gap-4 text-xl">Click for Achievements!</li>
+        <li className="gap-4 text-2xl">
+          Click for Achievements!
+        </li>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
