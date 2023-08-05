@@ -1,11 +1,12 @@
 .container {
+  perspective: 400px;
   width: 100px;
   height: 100px;
 }
 
 .cube {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   position: relative;
   transform-style: preserve-3d;
 }
@@ -14,38 +15,38 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .front {
-  transform: rotateY(0deg) translateZ(50px);
-  background-image: url("/icons/cplus.jpg");
+  transform: rotateY(0deg) translateZ(100px);
+  background-image: url("/icons/c.avif");
   background-size: contain;
 }
 .right {
-  transform: rotateY(90deg) translateZ(50px);
+  transform: rotateY(90deg) translateZ(100px);
   background-image: url("/icons/ts.png");
   background-size: cover;
 }
 .back {
-  transform: rotateY(180deg) translateZ(50px);
+  transform: rotateY(180deg) translateZ(100px);
   background-image: url("/icons/next.png");
   background-size: cover;
 }
 .left {
-  transform: rotateY(-90deg) translateZ(50px);
+  transform: rotateY(-90deg) translateZ(100px);
   background-image: url("/icons/psql.svg");
   background-size: contain;
 }
 
 .top {
-  transform: rotateX(90deg) translateZ(50px);
+  transform: rotateX(90deg) translateZ(100px);
   background-image: url("/icons/mongo1.png");
   background-size: contain;
 }
 
 .bottom {
-  transform: rotateX(-90deg) translateZ(50px);
-  background-image: url("/icons/node.png");
+  transform: rotateX(-90deg) translateZ(100px);
+  background-image: url("/icons/node.webp");
   background-size: contain;
 }
