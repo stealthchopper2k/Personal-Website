@@ -27,9 +27,14 @@ const variants_item = {
   },
 };
 
-export const Navigation = () => (
+interface Props {
+  onListClick: (page: string) => void;
+}
+
+export const Navigation = ({ onListClick }: Props) => (
   <motion.ul className="list" variants={variants}>
     <motion.li
+      onClick={() => onListClick("frontpage")}
       className="list-item"
       variants={variants_item}
       whileHover={{ scale: 1.1 }}
@@ -38,6 +43,7 @@ export const Navigation = () => (
       <span className="text-4xl text-black">Front Page</span>
     </motion.li>
     <motion.li
+      onClick={() => onListClick("skillpage")}
       className="list-item"
       variants={variants_item}
       whileHover={{ scale: 1.1 }}

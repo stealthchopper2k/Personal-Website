@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import SpinnyBox from "./framer/Cube";
-import NavMenu from "./framer/navigation/Example";
+import NavMenu from "./framer/navigation/Navbar";
 import ParaDiv from "./ParaDiv";
 
 function SkillsPage() {
@@ -11,6 +11,7 @@ function SkillsPage() {
 
   return (
     <div
+      id={"skillpage"}
       className="h-screen snap-start flex-shrink-0 border-b-2 border-solid border-black"
       ref={ref}
       style={{

@@ -1,9 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import Badges from "./MODBADGE";
-import { Typewriter } from "react-simple-typewriter";
 import { motion, useInView } from "framer-motion";
-import Example from "./framer/navigation/Example";
 
 function FrontPage() {
   const ref = useRef(null);
@@ -11,6 +9,7 @@ function FrontPage() {
 
   return (
     <div
+      id={"frontpage"}
       className="h-screen snap-start flex-shrink-1 border-b-2 border-solid border-black"
       ref={ref}
       style={{
@@ -19,7 +18,6 @@ function FrontPage() {
         opacity: isInView ? 1 : 0,
       }}
     >
-      <Example />
       <div className="flex flex-col w-full h-full bg-gray-900 items-center justify-center mt-10 flex-shrink-1">
         <div className="text-center">
           <h1 className="text-white text-[10rem]">Leonids Jefimovs</h1>

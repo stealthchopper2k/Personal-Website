@@ -1,5 +1,4 @@
 import "./nav.css";
-import { useRef } from "react";
 import { useCycle, motion } from "framer-motion";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
@@ -25,7 +24,14 @@ const sidebar = {
   },
 };
 
-export default function Example() {
+export default function Navbar() {
+  const handleNavigationClick = (page) => {
+    const element = document.getElementById(page);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [isOpen, toggleOpen] = useCycle(false, true);
   const { height } = useDimensions();
 
@@ -38,7 +44,7 @@ export default function Example() {
         custom={height}
       >
         <motion.div className="background" variants={sidebar} />
-        <Navigation />
+        <Navigation onListClick={handleNavigationClick} />
         <MenuToggle toggle={() => toggleOpen()} />
       </motion.nav>
     </motion.div>

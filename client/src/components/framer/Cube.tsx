@@ -41,6 +41,7 @@ function SpinnyBox() {
       onDragEnd={(e) => {
         setDragging(false);
       }}
+      whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
     >
       <div className="container">
         <div className="cube" ref={ref}>

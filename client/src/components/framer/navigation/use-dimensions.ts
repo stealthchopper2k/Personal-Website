@@ -1,10 +1,7 @@
 import { useState, useLayoutEffect } from "react";
 
 export const useDimensions = () => {
-  const [dimensions, setDimensions] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
+  const [dimensions, setDimensions] = useState<null | {}>({});
 
   useLayoutEffect(() => {
     const handleResize = () => {
@@ -20,7 +17,8 @@ export const useDimensions = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [dimensions]);
 
   return dimensions;
 };
+

@@ -8,6 +8,11 @@ import { SiPostgresql } from "react-icons/si";
 import { BiLogoCPlusPlus } from "react-icons/bi";
 import { BiLogoGraphql } from "react-icons/bi";
 
+const AnimatedButton = ({ children }) => (
+  <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+    {children}
+  </motion.button>
+);
 export default function ParaDiv() {
   return (
     <motion.div
@@ -23,29 +28,33 @@ export default function ParaDiv() {
       <h1 className="text-white text-8xl tracking-wide mb-6">
         3+ Years Experience In Fullstack Technologies
       </h1>
-      <ul className="flex flex-row justify-start gap-10">
-        <li className="">
+      <motion.ul
+        className="flex flex-row justify-start gap-10"
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <AnimatedButton>
           <FaReact size={96} />
-        </li>
-        <li>
+        </AnimatedButton>
+        <AnimatedButton>
           <SiTypescript size={96} />
-        </li>
-        <li>
+        </AnimatedButton>
+        <AnimatedButton>
           <LiaNode size={96} />
-        </li>
-        <li>
+        </AnimatedButton>
+        <AnimatedButton>
           <SiMongodb size={96} />
-        </li>
-        <li>
+        </AnimatedButton>
+        <AnimatedButton>
           <SiPostgresql size={96} />
-        </li>
-        <li>
+        </AnimatedButton>
+        <AnimatedButton>
           <BiLogoCPlusPlus size={96} />
-        </li>
-        <li className="">
+        </AnimatedButton>
+        <AnimatedButton>
           <BiLogoGraphql size={96} />
-        </li>
-      </ul>
+        </AnimatedButton>
+      </motion.ul>
     </motion.div>
   );
 }
