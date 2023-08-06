@@ -52,10 +52,10 @@ export const Background = () => {
           },
           modes: {
             push: {
-              quantity: 4,
+              quantity: 2,
             },
             repulse: {
-              distance: 200,
+              distance: 50,
               duration: 0.4,
             },
           },
@@ -75,9 +75,9 @@ export const Background = () => {
           number: {
             density: {
               enable: true,
-              area: 100,
+              area: 20,
             },
-            value: 80,
+            value: 10,
           },
           opacity: {
             animation: {
@@ -99,7 +99,7 @@ export const Background = () => {
           size: {
             value: {
               min: 1,
-              max: 5,
+              max: 1,
             },
           },
         },

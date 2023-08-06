@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
-import FrontPage from "../components/FrontPage";
-import SkillsPage from "@/components/SkillsPage";
+import FrontPage from "../components/frontpage/FrontPage";
+import SkillsPage from "@/components/skillpage/SkillsPage";
 import Navbar from "../components/framer/navigation/Navbar";
+import { Background } from "@/components/frontpage/Background";
+import AboutPage from "@/components/AboutPage";
 
 function MainComponent() {
   return (
@@ -11,6 +13,7 @@ function MainComponent() {
         <Navbar />
         <FrontPage />
         <SkillsPage />
+        <AboutPage />
       </main>
     </>
   );

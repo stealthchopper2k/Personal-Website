@@ -1,7 +1,8 @@
 "use client";
 import React, { useRef } from "react";
-import Badges from "./MODBADGE";
+import Badges from "./Badges";
 import { motion, useInView } from "framer-motion";
+import { Background } from "./Background";
 
 function FrontPage() {
   const ref = useRef(null);
