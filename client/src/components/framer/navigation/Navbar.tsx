@@ -36,17 +36,21 @@ export default function Navbar() {
   const { height } = useDimensions();
 
   return (
-    <motion.div className="maincontainer">
-      <motion.nav
-        className="navbarmain"
-        initial={false}
-        animate={isOpen ? "open" : "closed"}
-        custom={height}
+    <>
+      <motion.div
+        className={`maincontainer ${isOpen ? "z-10" : "pointer-events-none"}`}
       >
-        <motion.div className="background" variants={sidebar} />
-        <Navigation onListClick={handleNavigationClick} />
-        <MenuToggle toggle={() => toggleOpen()} />
-      </motion.nav>
-    </motion.div>
+        <motion.nav
+          className={`navbarmain`}
+          initial={false}
+          animate={isOpen ? "open" : "closed"}
+          custom={height}
+        >
+          <motion.div className="background" variants={sidebar} />
+          <Navigation onListClick={handleNavigationClick} />
+          <MenuToggle toggle={() => toggleOpen()} />
+        </motion.nav>
+      </motion.div>
+    </>
   );
 }

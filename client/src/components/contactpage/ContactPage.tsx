@@ -17,7 +17,7 @@ export default function Contactpage() {
       }}
     >
       <div className="flex flex-row w-full h-full bg-gray-900 gap-10 items-center justify-start mt-10 p-40">
-        <h1>hi</h1>
+        <h1>Demonstrations</h1>
       </div>
     </div>
   );

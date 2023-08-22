@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <div
       id={"aboutpage"}
-      className="h-screen snap-start flex-shrink-1 border-b-2 border-solid border-black"
+      className="h-screen snap-start flex-shrink-1 border-b-2 border-solid border-black text-white"
       ref={ref}
       style={{
         transform: isInView ? "translateY(0)" : "translateX(-200px)",
@@ -46,7 +46,7 @@ export default function AboutPage() {
           </motion.button>
         </div>
         <div className="flex items-center justify-center w-2/4 h-4/4">
-          <motion.div className="mt-[-4rem] relative h-3/4 h-3/4">
+          <motion.div className="mt-[-4rem] relative w-3/4 h-3/4">
             <ImageContainer backgroundImages={images} />
           </motion.div>
         </div>

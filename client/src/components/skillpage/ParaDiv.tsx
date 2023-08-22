@@ -9,9 +9,11 @@ import { BiLogoCPlusPlus } from "react-icons/bi";
 import { BiLogoGraphql } from "react-icons/bi";
 import { BiLogoGoogleCloud } from "react-icons/bi";
 import { FiFigma } from "react-icons/fi";
+import { SiWebpack } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
+import { SiTailwindcss } from "react-icons/si";
 
-const AnimatedButton = ({ children }) => (
+export const AnimatedButton = ({ children }) => (
   <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
     {children}
   </motion.button>
@@ -19,7 +21,7 @@ const AnimatedButton = ({ children }) => (
 export default function ParaDiv() {
   return (
     <motion.div
-      className="flex flex-col"
+      className="flex flex-col flex-wrap"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
@@ -35,18 +37,23 @@ export default function ParaDiv() {
         Including but not limited to:
       </h3>
       <motion.ul
-        className="flex flex-row justifyg-start gap-5"
+        className="flex flex-row flex-wrap justify-start gap-5"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
         <AnimatedButton>
-          <FaReact size={96} color={"#33ccff"} />
-          <span className="text-white text-xl tracking-wide">React</span>
-        </AnimatedButton>
-        <AnimatedButton>
           <SiTypescript size={96} color={"#33ccff"} />
           <span className="text-white text-xl tracking-wide">TypeScript</span>
         </AnimatedButton>
+        <AnimatedButton>
+          <BiLogoCPlusPlus size={96} color="#0066cc" />
+          <span className="text-white text-xl tracking-wide">C++</span>
+        </AnimatedButton>
+        <AnimatedButton>
+          <FaReact size={96} color={"#33ccff"} />
+          <span className="text-white text-xl tracking-wide">React</span>
+        </AnimatedButton>
+
         <AnimatedButton>
           <LiaNode size={96} color="#009933" />
           <span className="text-white text-xl tracking-wide">NodeJS</span>
@@ -60,10 +67,6 @@ export default function ParaDiv() {
           <span className="text-white text-xl tracking-wide">PostgreSQL</span>
         </AnimatedButton>
         <AnimatedButton>
-          <BiLogoCPlusPlus size={96} color="#0066cc" />
-          <span className="text-white text-xl tracking-wide">C++</span>
-        </AnimatedButton>
-        <AnimatedButton>
           <BiLogoGraphql size={96} color="#ff00ff" />
           <span className="text-white text-xl tracking-wide">GraphQL</span>
         </AnimatedButton>
@@ -74,6 +77,18 @@ export default function ParaDiv() {
         <AnimatedButton>
           <BsGit size={96} color={"#ff0000"} />
           <span className="text-white text-xl tracking-wide">Git</span>
+        </AnimatedButton>
+        <AnimatedButton>
+          <SiWebpack size={96} color={"#009933"} />
+          <span className="text-white text-xl tracking-wide">Webpack</span>
+        </AnimatedButton>
+        <AnimatedButton>
+          <FiFigma size={96} color={"#ff0066"} />
+          <span className="text-white text-xl tracking-wide">Figma</span>
+        </AnimatedButton>
+        <AnimatedButton>
+          <SiTailwindcss size={96} color={"#33ccff"} />
+          <span className="text-white text-xl tracking-wide">Tailwind CSS</span>
         </AnimatedButton>
       </motion.ul>
     </motion.div>

@@ -32,7 +32,7 @@ interface Props {
 }
 
 export const Navigation = ({ onListClick }: Props) => (
-  <motion.ul className="list" variants={variants}>
+  <motion.ul className="list" variants={variants} >
     <motion.li
       onClick={() => onListClick("frontpage")}
       className="list-item"
@@ -41,6 +41,15 @@ export const Navigation = ({ onListClick }: Props) => (
       whileTap={{ scale: 0.95 }}
     >
       <span className="text-4xl text-black">Front Page</span>
+    </motion.li>
+    <motion.li
+      onClick={() => onListClick("aboutpage")}
+      className="list-item"
+      variants={variants_item}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <span className="text-4xl text-black">About Me</span>
     </motion.li>
     <motion.li
       onClick={() => onListClick("skillpage")}
@@ -52,13 +61,13 @@ export const Navigation = ({ onListClick }: Props) => (
       <span className="text-4xl text-black">Skills</span>
     </motion.li>
     <motion.li
-      onClick={() => onListClick("aboutpage")}
+      onClick={() => onListClick("projectspage")}
       className="list-item"
       variants={variants_item}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <span className="text-4xl text-black">About Me</span>
+      <span className="text-4xl text-black">Projects</span>
     </motion.li>
     <motion.li
       onClick={() => onListClick("contactpage")}

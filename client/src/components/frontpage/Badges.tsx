@@ -9,11 +9,13 @@ export default function Badges() {
 
   useAnimationFrame((t) => {
     const x = Math.sin(t / 500) * 10;
-    ref.current.style.transform = `rotateY(${x}deg)`;
+    if (ref.current) {
+      ref.current.style.transform = `rotateY(${x}deg)`;
+    }
   });
 
   return (
-    <div className="flex flex-row justify-between">
+    <div className="flex flex-row justify-between text-white">
       <motion.div
         className="p-2 w-7 h-5 mt-[-4rem]"
         initial={{ opacity: 0, scale: 0.5 }}
@@ -24,7 +26,7 @@ export default function Badges() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="text-3xl">
+        <div className="text-3xl ">
           <Typewriter
             deleteSpeed={50}
             typeSpeed={100}
@@ -39,10 +41,11 @@ export default function Badges() {
           />
         </div>
       </motion.div>
-      <ul className="flex flex-row justify-center items-center mt-[-3rem]" ref={ref}>
-        <li className="gap-4 text-2xl">
-          Click for Achievements!
-        </li>
+      <ul
+        className="flex flex-row justify-center items-center mt-[-3rem]"
+        ref={ref}
+      >
+        <li className="gap-4 text-2xl">Click for Achievements!</li>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

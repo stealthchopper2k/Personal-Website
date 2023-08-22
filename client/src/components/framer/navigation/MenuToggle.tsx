@@ -1,3 +1,4 @@
+import * as React from "react";
 import { motion } from "framer-motion";
 
 const Path = (props) => (
@@ -11,7 +12,7 @@ const Path = (props) => (
 );
 
 export const MenuToggle = ({ toggle }) => (
-  <button className="toggleBtn" onClick={toggle}>
+  <button className="toggleBtn pointer-events-auto" onClick={toggle}>
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{

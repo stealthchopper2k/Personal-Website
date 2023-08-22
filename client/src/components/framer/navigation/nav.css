@@ -47,6 +47,7 @@
   height: 50px;
   border-radius: 50%;
   background: transparent;
+  z-index: 50;
 }
 
 .list,
@@ -72,4 +73,8 @@
 
 .toggleBtn path {
   fill: var(--background);
+}
+
+.closed {
+  pointer-events: none;
 }
