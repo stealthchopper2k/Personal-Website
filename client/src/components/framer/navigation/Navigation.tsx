@@ -60,5 +60,14 @@ export const Navigation = ({ onListClick }: Props) => (
     >
       <span className="text-4xl text-black">About Me</span>
     </motion.li>
+    <motion.li
+      onClick={() => onListClick("contactpage")}
+      className="list-item"
+      variants={variants_item}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <span className="text-4xl text-black">Contact</span>
+    </motion.li>
   </motion.ul>
 );

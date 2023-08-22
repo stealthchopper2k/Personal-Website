@@ -3,8 +3,8 @@ import React from "react";
 import FrontPage from "../components/frontpage/FrontPage";
 import SkillsPage from "@/components/skillpage/SkillsPage";
 import Navbar from "../components/framer/navigation/Navbar";
-import { Background } from "@/components/frontpage/Background";
-import AboutPage from "@/components/AboutPage";
+import AboutPage from "@/components/aboutpage/AboutPage";
+import Contactpage from "@/components/contactpage/Contactpage";
 
 function MainComponent() {
   return (
@@ -14,6 +14,7 @@ function MainComponent() {
         <FrontPage />
         <SkillsPage />
         <AboutPage />
+        <Contactpage />
       </main>
     </>
   );

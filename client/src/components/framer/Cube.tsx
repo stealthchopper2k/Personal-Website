@@ -6,7 +6,7 @@ import {
   useMotionValue,
   distance,
 } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./styles.css";
 
 function SpinnyBox() {
