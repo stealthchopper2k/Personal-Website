@@ -37,7 +37,7 @@ export default function AboutPage() {
               working out.
             </p>
           </motion.button>
-          <h1 className="text-4xl md:text-6xl tracking-wide mt-10 mb-10 whitespace-nowrap">
+          <h1 className="text-4xl md:text-6xl tracking-wide mt-5 mb-5 md:mb-10 md:mt-10 whitespace-nowrap">
             Certifications
           </h1>
           <div className="flex flex-row gap-10">
@@ -52,7 +52,7 @@ export default function AboutPage() {
                 height="300"
                 layout="fixed"
               />
-              <h1>Software Degree</h1>
+              <h1 className="hidden md:block">Software Degree</h1>
             </Link>
             <Link
               className="rounded-lg w-16 md:w-32 animate-pulse"
@@ -65,7 +65,7 @@ export default function AboutPage() {
                 height="50"
                 layout="fixed"
               />
-              <h1>Ministry Of Defence</h1>
+              <h1 className="hidden md:block">Ministry Of Defence</h1>
             </Link>
           </div>
         </div>

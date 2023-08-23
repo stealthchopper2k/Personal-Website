@@ -37,7 +37,7 @@ function ProjectsPage() {
             <Linkshare />
           </ProjComponent>
           <ProjComponent
-            project_name="Industrial Works"
+            project_name="Industrial LTD"
             img=""
             Icon={LiaGoogleDrive}
             IconColor="yellow"

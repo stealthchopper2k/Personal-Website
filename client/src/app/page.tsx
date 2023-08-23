@@ -4,7 +4,7 @@ import FrontPage from "../components/frontpage/FrontPage";
 import SkillsPage from "@/components/skillpage/SkillsPage";
 import Navbar from "../components/framer/navigation/Navbar";
 import AboutPage from "@/components/aboutpage/AboutPage";
-import Contactpage from "@/components/contactpage/Contactpage";
+import ContactPage from "@/components/contactpage/ContactPage";
 import ProjectsPage from "@/components/projectspage/ProjectsPage";
 import Head from "next/head";
 
@@ -22,7 +22,7 @@ function MainComponent() {
         <AboutPage />
         <SkillsPage />
         <ProjectsPage />
-        <Contactpage />
+        <ContactPage />
       </main>
     </>
   );

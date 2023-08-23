@@ -7,14 +7,14 @@ export default function ContactIcons() {
   return (
     <div className="flex flex-row">
       <AnimatedButton>
-        <FaGithub color={"white"}>
-          <a href="https://github.com/stealthchopper2k/Linkshare-" />
-        </FaGithub>
+        <a href="https://github.com/stealthchopper2k/Linkshare-">
+          <FaGithub color={"white"} />
+        </a>
       </AnimatedButton>
       <AnimatedButton>
-        <AiFillLinkedin color={"white"}>
-          <a href="https://www.linkedin.com/in/leo2k/" />
-        </AiFillLinkedin>
+        <a href="https://www.linkedin.com/in/leo2k/">
+          <AiFillLinkedin color={"white"} />
+        </a>
       </AnimatedButton>
     </div>
   );

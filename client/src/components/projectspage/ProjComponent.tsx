@@ -46,7 +46,7 @@ export default function ProjComponent({
   return (
     <div className="flex flex-col md:flex-row md:items-start gap-5 mb-10">
       <div className="flex flex-col justify-between">
-        <div className="flex flex-row justify-start items-center">
+        <div className="flex flex-row justify-start items-center whitespace-nowrap">
           <AnimatedButton>
             <a href={href} className="text-5xl">
               {project_name}
