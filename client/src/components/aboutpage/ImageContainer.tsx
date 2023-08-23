@@ -32,7 +32,7 @@ export const ImageContainer = ({ backgroundImages }: Props) => {
       <Image
         alt={currentBackgroundImage}
         src={currentBackgroundImage}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         width={300}
         height={300}
         style={{

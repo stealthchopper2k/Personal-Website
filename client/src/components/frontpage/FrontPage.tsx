@@ -11,7 +11,7 @@ function FrontPage() {
   return (
     <div
       id={"frontpage"}
-      className="h-screen snap-start flex-shrink-1 border-b-2 border-solid border-black"
+      className="h-screen snap-start border-b-2 border-solid border-black bg-gray-900 flex-shrink-1"
       ref={ref}
       style={{
         transform: isInView ? "translateY(0)" : "translateX(-200px)",
@@ -19,9 +19,11 @@ function FrontPage() {
         opacity: isInView ? 1 : 0,
       }}
     >
-      <div className="flex flex-col w-full h-full bg-gray-900 items-center justify-center mt-10 flex-shrink-1">
+      <div className="flex flex-col w-full h-full items-center justify-center mt-10">
         <div className="text-center">
-          <h1 className="text-white text-[10rem]">Leonids Jefimovs</h1>
+          <h1 className="text-white text-5xl whitespace-nowrap sm:text-7xl md:text-[6rem] xl:text-[8rem] 2xl:text-[10rem]">
+            Leonids Jefimovs
+          </h1>
           <motion.div
             className="relative"
             initial={{ opacity: 0, scale: 0.5 }}

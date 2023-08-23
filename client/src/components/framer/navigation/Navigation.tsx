@@ -40,7 +40,7 @@ export const Navigation = ({ onListClick }: Props) => (
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <span className="text-4xl text-black">Front Page</span>
+      <span className="text-2xl md:text-4xl text-black">Front Page</span>
     </motion.li>
     <motion.li
       onClick={() => onListClick("aboutpage")}
@@ -49,7 +49,7 @@ export const Navigation = ({ onListClick }: Props) => (
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <span className="text-4xl text-black">About Me</span>
+      <span className="text-2xl md:text-4xl text-black">About Me</span>
     </motion.li>
     <motion.li
       onClick={() => onListClick("skillpage")}
@@ -58,7 +58,7 @@ export const Navigation = ({ onListClick }: Props) => (
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <span className="text-4xl text-black">Skills</span>
+      <span className="text-2xl md:text-4xl text-black">Skills</span>
     </motion.li>
     <motion.li
       onClick={() => onListClick("projectspage")}
@@ -67,7 +67,7 @@ export const Navigation = ({ onListClick }: Props) => (
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <span className="text-4xl text-black">Projects</span>
+      <span className="text-2xl md:text-4xl text-black">Projects</span>
     </motion.li>
     <motion.li
       onClick={() => onListClick("contactpage")}
@@ -76,7 +76,7 @@ export const Navigation = ({ onListClick }: Props) => (
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <span className="text-4xl text-black">Contact</span>
+      <span className="text-2xl md:text-4xl text-black">Contact</span>
     </motion.li>
   </motion.ul>
 );

@@ -1,6 +1,6 @@
 "use client";
-import React, { useRef } from "react"
-import {  useInView } from "framer-motion";
+import React, { useRef } from "react";
+import { useInView } from "framer-motion";
 import SpinnyBox from "../framer/Cube";
 import ParaDiv from "./ParaDiv";
 
@@ -11,7 +11,7 @@ function SkillsPage() {
   return (
     <div
       id={"skillpage"}
-      className="h-screen snap-start flex-shrink-0 border-b-2 border-solid border-black"
+      className="h-screen snap-start border-b-2 border-solid border-black"
       ref={ref}
       style={{
         transform: isInView ? "translateY(0)" : "translateX(-200px)",
@@ -19,11 +19,11 @@ function SkillsPage() {
         opacity: isInView ? 1 : 0,
       }}
     >
-      <div className="flex flex-row w-full h-full bg-gray-900 gap-10 items-center justify-center mt-10 p-40">
+      <div className="flex flex-col items-center justify-center md:flex-row w-full h-full bg-gray-900 gap-10 mt-10 md:p-24 p-16">
         <div className="flex items-center justify-center w-3/4">
           <ParaDiv />
         </div>
-        <div className="flex items-start justify-start w-1/4">
+        <div className="absolute bottom-10 right-10 md:relative md:flex md:items-start md:justify-start md:w-16">
           <SpinnyBox />
         </div>
       </div>

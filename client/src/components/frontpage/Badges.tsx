@@ -15,9 +15,9 @@ export default function Badges() {
   });
 
   return (
-    <div className="flex flex-row justify-between text-white">
+    <div className="flex flex-row justify-between text-white mt-16 md:mt-10">
       <motion.div
-        className="p-2 w-7 h-5 mt-[-4rem]"
+        className="md:p-2 w-7 h-5 mt-[-4rem]"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -26,7 +26,7 @@ export default function Badges() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="text-3xl ">
+        <div className="text-xl md:text-3xl">
           <Typewriter
             deleteSpeed={50}
             typeSpeed={100}
@@ -42,30 +42,32 @@ export default function Badges() {
         </div>
       </motion.div>
       <ul
-        className="flex flex-row justify-center items-center mt-[-3rem]"
+        className="flex md:flex-row items-center mt-[-3rem]"
         ref={ref}
       >
-        <li className="gap-4 text-2xl">Click for Achievements!</li>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={4}
-          stroke="currentColor"
-          className="w-12 h-10 m-2 text-ff0066 rounded-full cursor-pointer hover:text-green-600 transition duration-300 ease-in-out"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-          />
-        </svg>
-        <li className="rounded-lg w-24 animate-pulse">
+        <div className="hidden md:flex flex-row justify-center items-center">
+          <li className="gap-4 text-xl md:2xl">Click for Achievements!</li>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={4}
+            stroke="currentColor"
+            className="w-12 h-10 m-2 text-ff0066 rounded-full cursor-pointer hover:text-green-600 transition duration-300 ease-in-out"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </div>
+        <li className="rounded-lg w-20 md:w-32 animate-pulse">
           <Link href="https://www.linkedin.com/posts/leo2k_happy-to-announce-that-i-got-a-first-class-activity-7093219324294746112-SLsp?">
             <Image src="/gradmain.png" alt="B Cert" width="300" height="300" />
           </Link>
         </li>
-        <li className="rounded-lg w-24 animate-pulse">
+        <li className="rounded-lg w-16 md:w-24 animate-pulse">
           <Link href="https://bcert.me/bc/html/show-badge.html?b=hdffycdr">
             <Image src="/badge.png" alt="B Cert" width="100" height="100" />
           </Link>

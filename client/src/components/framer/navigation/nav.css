@@ -78,3 +78,17 @@
 .closed {
   pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  .background {
+    width: 200px;
+  }
+
+  .list {
+    top: 80px;
+    padding: 15px;
+  }
+  .list-item {
+    font-size: 1.5rem;
+  }
+}

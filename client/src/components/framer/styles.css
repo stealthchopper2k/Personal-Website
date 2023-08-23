@@ -1,12 +1,12 @@
 .container {
   perspective: 400px;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 }
 
 .cube {
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
   position: relative;
   transform-style: preserve-3d;
 }
@@ -19,34 +19,73 @@
 }
 
 .front {
-  transform: rotateY(0deg) translateZ(100px);
+  transform: rotateY(0deg) translateZ(85px);
   background-image: url("/icons/c.avif");
   background-size: contain;
 }
+
 .right {
-  transform: rotateY(90deg) translateZ(100px);
+  transform: rotateY(90deg) translateZ(85px);
   background-image: url("/icons/ts.png");
   background-size: cover;
 }
+
 .back {
-  transform: rotateY(180deg) translateZ(100px);
+  transform: rotateY(180deg) translateZ(85px);
   background-image: url("/icons/next.png");
   background-size: cover;
 }
+
 .left {
-  transform: rotateY(-90deg) translateZ(100px);
+  transform: rotateY(-90deg) translateZ(85px);
   background-image: url("/icons/psql.svg");
   background-size: contain;
 }
 
 .top {
-  transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(85px);
   background-image: url("/icons/mongo1.png");
   background-size: contain;
 }
 
 .bottom {
-  transform: rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(85px);
   background-image: url("/icons/node.webp");
   background-size: contain;
+}
+
+@media (max-width: 1024px) {
+  /* Adjust styles for screens up to 768px wide (typical mobile devices) */
+
+  .cube {
+    /* ... */
+    width: 80px;
+    height: 80px;
+    /* position: relative; */
+    transform-style: preserve-3d;
+  }
+
+  .front {
+    transform: rotateY(0deg) translateZ(40px);
+  }
+
+  .right {
+    transform: rotateY(90deg) translateZ(40px);
+  }
+
+  .back {
+    transform: rotateY(180deg) translateZ(40px);
+  }
+
+  .left {
+    transform: rotateY(-90deg) translateZ(40px);
+  }
+
+  .top {
+    transform: rotateX(90deg) translateZ(40px);
+  }
+
+  .bottom {
+    transform: rotateX(-90deg) translateZ(40px);
+  }
 }
