@@ -1,8 +1,11 @@
 "use client";
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
+import ProjComponent from "./ProjComponent";
 import Linkshare from "./Linkshare";
 import Adcon from "./Adcon";
+import { FaGithub } from "react-icons/fa";
+import { LiaGoogleDrive } from "react-icons/lia";
 
 function ProjectsPage() {
   const ref = useRef(null);
@@ -19,11 +22,31 @@ function ProjectsPage() {
         opacity: isInView ? 1 : 0,
       }}
     >
-      <div className="flex w-full h-full gap-10 items-start justify-start mt-10 p-16 sm:p-16 lg:p-40">
+      <div className="flex w-full h-full gap-10 items-start justify-start mt-10 p-16 sm:p-16 lg:p-36">
         <div className="flex flex-col items-start justify-start">
           <h1 className="text-6xl md:text-8xl tracking-wide mb-10">Projects</h1>
-          <Linkshare />
-          <Adcon />
+          <ProjComponent
+            project_name="Linkshare"
+            img="/linkshare.png"
+            href="https://link-share.co.uk"
+            Icon={FaGithub}
+            IconColor="white"
+            description="A web-service using the cloud for storing and collaborating on
+          improved hyperlink pages."
+          >
+            <Linkshare />
+          </ProjComponent>
+          <ProjComponent
+            project_name="Industrial Works"
+            img=""
+            Icon={LiaGoogleDrive}
+            IconColor="yellow"
+            href="https://drive.google.com/drive/u/0/folders/1_mlvhFu4QwqV5jv0-uZYGK_qL_esNR-Z"
+            description="A 28+ table database for a large company with thorough explanation and
+            examples."
+          >
+            <Adcon />
+          </ProjComponent>
         </div>
       </div>
     </div>
@@ -31,3 +54,12 @@ function ProjectsPage() {
 }
 
 export default ProjectsPage;
+{
+  /* <AnimatedButton>
+<li className="rounded-lg w-16 md:w-24">
+  <Link href="https://bcert.me/bc/html/show-badge.html?b=hdffycdr">
+    <Image src="/badge.png" alt="B Cert" width="100" height="100" />
+  </Link>
+</li>
+</AnimatedButton> */
+}

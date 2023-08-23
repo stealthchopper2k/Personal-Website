@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 import ImageContainer from "./ImageContainer";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutPage() {
   const images = ["/lilme.jpeg", "/work.jpg", "/gradmain.png"];
@@ -35,6 +37,37 @@ export default function AboutPage() {
               working out.
             </p>
           </motion.button>
+          <h1 className="text-4xl md:text-6xl tracking-wide mt-10 mb-10 whitespace-nowrap">
+            Certifications
+          </h1>
+          <div className="flex flex-row gap-10">
+            <Link
+              className="rounded-lg w-20 md:w-32 animate-pulse"
+              href="https://www.linkedin.com/posts/leo2k_happy-to-announce-that-i-got-a-first-class-activity-7093219324294746112-SLsp?"
+            >
+              <Image
+                src="/gradmain.png"
+                alt="B Cert"
+                width="300"
+                height="300"
+                layout="fixed"
+              />
+              <h1>Software Degree</h1>
+            </Link>
+            <Link
+              className="rounded-lg w-16 md:w-32 animate-pulse"
+              href="https://bcert.me/bc/html/show-badge.html?b=hdffycdr"
+            >
+              <Image
+                src="/badge.png"
+                alt="B Cert"
+                width="80"
+                height="50"
+                layout="fixed"
+              />
+              <h1>Ministry Of Defence</h1>
+            </Link>
+          </div>
         </div>
         <div className="w-full md:w-2/4 h-4/4 flex justify-center items-center">
           <motion.div className="items-center relative h-full">

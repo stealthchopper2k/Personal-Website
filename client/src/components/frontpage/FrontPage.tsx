@@ -1,7 +1,8 @@
 "use client";
 import React, { useRef } from "react";
-import Badges from "./Badges";
+import TitleUnderBar from "./TitleUnderBar";
 import { motion, useInView } from "framer-motion";
+import ContactIcons from "./ContactIcons";
 import { Background } from "./Background";
 
 function FrontPage() {
@@ -21,7 +22,7 @@ function FrontPage() {
     >
       <div className="flex flex-col w-full h-full items-center justify-center mt-10">
         <div className="text-center">
-          <h1 className="text-white text-5xl whitespace-nowrap sm:text-7xl md:text-[6rem] xl:text-[8rem] 2xl:text-[10rem]">
+          <h1 className="text-white text-xl whitespace-nowrap sm:text-7xl md:text-[6rem] xl:text-[8rem] 2xl:text-[10rem]">
             Leonids Jefimovs
           </h1>
           <motion.div
@@ -34,7 +35,7 @@ function FrontPage() {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            <Badges />
+            <TitleUnderBar />
           </motion.div>
         </div>
       </div>
