@@ -1,8 +1,8 @@
-// This example uses `@web3forms/react` plugin and tailwindcss for css styling
-
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
+
+// @ts-ignore
 
 export default function Form() {
   const {

@@ -20,7 +20,7 @@ export default function ContactPage() {
       <div className="flex flex-row w-full h-full bg-gray-900 gap-10 items-center justify-center mt-10 p-24">
         <div className="flex flex-col items-center justify-center text-center">
           <h1 className="text-6xl md:text-8xl tracking-wide mb-10">
-            Let's Talk!
+            Let&apos;s Talk!
           </h1>
           <p className="text-lg mb-6">
             Have a question or want to collaborate? Feel free to reach out to
