@@ -3,9 +3,10 @@ import { useInView, motion } from "framer-motion";
 import ImageContainer from "./ImageContainer";
 import Link from "next/link";
 import Image from "next/image";
+import Cols from "./Cols";
 
 export default function AboutPage() {
-  const images = ["/lilme.jpeg", "/work.jpg", "/gradmain.png"];
+  const images = ["/lilme.jpeg", "/work.jpg"];
 
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -21,9 +22,9 @@ export default function AboutPage() {
         opacity: isInView ? 1 : 0,
       }}
     >
-      <div className="flex flex-col w-full md:flex-row gap-10 items-center justify-center md:p-40 p-16">
+      <div className="flex flex-col w-full md:flex-row gap-10 items-center justify-center p-16 md:p-16 xl:p-24 2xl:p-40">
         <div className="w-full md:w-2/4 max-w-full max-h-screen">
-          <h1 className="text-6xl whitespace-nowrap md:text-8xl mb-10">
+          <h1 className="text-6xl whitespace-nowrap md:text-8xl mb-5 md:mb-10">
             About me
           </h1>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
@@ -32,46 +33,20 @@ export default function AboutPage() {
               tinkering around with the possibilities of digital products.
             </p>
             <p className="flex text-start text-md md:text-2xl mt-6 flex-wrap">
-              I spend most of my free time exploring new software concepts,
-              browsing forums and organising community based RPG events and
-              working out.
+              As a recent graduate, most of my free time is spent exploring new
+              software concepts, learning new technologies and building
+              projects.
+            </p>
+            <p className="flex text-start text-md md:text-2xl mt-6 flex-wrap">
+              I frequently participate in social events and sports to expand my
+              network and maintain a healthy lifestyle.
             </p>
           </motion.button>
-          <h1 className="text-4xl md:text-6xl tracking-wide mt-5 mb-5 md:mb-10 md:mt-10 whitespace-nowrap">
-            Certifications
-          </h1>
-          <div className="flex flex-row gap-10">
-            <Link
-              className="rounded-lg w-20 md:w-32 animate-pulse"
-              href="https://www.linkedin.com/posts/leo2k_happy-to-announce-that-i-got-a-first-class-activity-7093219324294746112-SLsp?"
-            >
-              <Image
-                src="/gradmain.png"
-                alt="B Cert"
-                width="300"
-                height="300"
-                layout="fixed"
-              />
-              <h1 className="hidden md:block">Software Degree</h1>
-            </Link>
-            <Link
-              className="rounded-lg w-16 md:w-32 animate-pulse"
-              href="https://bcert.me/bc/html/show-badge.html?b=hdffycdr"
-            >
-              <Image
-                src="/badge.png"
-                alt="B Cert"
-                width="80"
-                height="50"
-                layout="fixed"
-              />
-              <h1 className="hidden md:block">Ministry Of Defence</h1>
-            </Link>
-          </div>
+          <Cols />
         </div>
         <div className="w-full md:w-2/4 h-4/4 flex justify-center items-center">
           <motion.div className="items-center relative h-full">
-            <ImageContainer backgroundImages={images} />
+            <ImageContainer backgroundImages={images} changing={false} />
           </motion.div>
         </div>
       </div>

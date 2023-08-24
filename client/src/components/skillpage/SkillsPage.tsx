@@ -19,8 +19,8 @@ function SkillsPage() {
         opacity: isInView ? 1 : 0,
       }}
     >
-      <div className="flex flex-col items-center justify-center md:flex-row w-full h-full bg-gray-900 gap-10 mt-10 md:p-24 p-16">
-        <div className="flex items-center justify-center w-3/4">
+      <div className="flex flex-col items-center justify-center md:flex-row w-full h-full bg-gray-900 gap-10 mt-10 p-16 md:p-16">
+        <div className="flex items-start justify-start w-3/4">
           <ParaDiv />
         </div>
         <div className="absolute bottom-10 right-10 md:relative md:flex md:items-start md:justify-start md:w-16">

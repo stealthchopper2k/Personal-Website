@@ -3,9 +3,10 @@ import Image from "next/image";
 
 interface Props {
   backgroundImages: string[];
+  changing: boolean;
 }
 
-export const ImageContainer = ({ backgroundImages }: Props) => {
+export const ImageContainer = ({ backgroundImages, changing }: Props) => {
   const [currentBackgroundImage, setCurrentBackgroundImage] = useState(
     backgroundImages[0]
   );
@@ -29,18 +30,29 @@ export const ImageContainer = ({ backgroundImages }: Props) => {
 
   return (
     <>
-      <Image
-        alt={currentBackgroundImage}
-        src={currentBackgroundImage}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        width={300}
-        height={300}
-        style={{
-          opacity: fadingOut ? 0 : 1,
-          transition: `opacity 2000ms ease-in-out`,
-        }}
-        className="w-full h-full rounded-xl"
-      />
+      {changing ? (
+        <Image
+          alt={currentBackgroundImage}
+          src={currentBackgroundImage}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          width={300}
+          height={300}
+          style={{
+            opacity: fadingOut ? 0 : 1,
+            transition: `opacity 2000ms ease-in-out`,
+          }}
+          className="w-full h-full rounded-xl"
+        />
+      ) : (
+        <Image
+          alt={backgroundImages[0]}
+          src={backgroundImages[0]}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          width={300}
+          height={300}
+          className="w-full h-full rounded-xl"
+        />
+      )}
     </>
   );
 };

@@ -37,7 +37,7 @@ export default function ParaDiv() {
       }}
     >
       <h1 className="text-white text-5xl sm:text-5xl md:text-6xl 2xl:text-8xl tracking-wide mb-10">
-        3+ Years Experience In Fullstack Technologies
+        4+ Years Experience In Fullstack Technologies
       </h1>
       <h3 className="text-white text-2xl md:text-4xl tracking-wide mb-10">
         Including but not limited to:
@@ -84,12 +84,12 @@ export default function ParaDiv() {
             PostgreSQL
           </span>
         </AnimatedButton>
-        <AnimatedButton>
+        {/* <AnimatedButton>
           <BiLogoGraphql color="#ff00ff" />
           <span className="hidden md:block text-white text-xl tracking-wide">
             GraphQL
           </span>
-        </AnimatedButton>
+        </AnimatedButton> */}
         <AnimatedButton>
           <BiLogoGoogleCloud color={"yellow"} />
           <span className="hidden md:block text-white text-xl tracking-wide">
@@ -121,6 +121,9 @@ export default function ParaDiv() {
           </span>
         </AnimatedButton>
       </motion.ul>
+      <h3 className="text-white text-2xl md:text-4xl tracking-wide mt-10">
+        Im always learning and improving!
+      </h3>
     </motion.div>
   );
 }
