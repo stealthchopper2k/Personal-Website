@@ -6,7 +6,6 @@ import { LiaNode } from "react-icons/lia";
 import { SiMongodb } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 import { BiLogoCPlusPlus } from "react-icons/bi";
-import { BiLogoGraphql } from "react-icons/bi";
 import { BiLogoGoogleCloud } from "react-icons/bi";
 import { FiFigma } from "react-icons/fi";
 import { SiWebpack } from "react-icons/si";

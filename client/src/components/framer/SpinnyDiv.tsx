@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const SpinnyDiv = () => (
   <motion.div
-    className="absolute bottom-0 w-24 h-24 bg-black rounded-full"
+    className="absolute bottom-0 right-0 w-24 h-24 bg-black rounded-full"
     animate={{
       scale: [1, 2, 2, 1, 1],
       rotate: [0, 0, 1470, 270, 0],
