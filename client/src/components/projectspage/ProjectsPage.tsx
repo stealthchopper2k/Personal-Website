@@ -22,9 +22,9 @@ function ProjectsPage() {
         opacity: isInView ? 1 : 0,
       }}
     >
-      <div className="flex w-full h-full gap-10 items-start justify-start mt-10 p-16 sm:p-16 lg:p-36">
+      <div className="flex w-full h-full gap-10 items-start justify-start mt-10 p-16 lg:p-36">
         <div className="flex flex-col items-start justify-start">
-          <h1 className="text-6xl md:text-8xl tracking-wide mb-10">Projects</h1>
+          <h1 className="text-5xl md:text-8xl tracking-wide mb-10">Projects</h1>
           <ProjComponent
             project_name="Linkshare"
             img="/linkshare.png"

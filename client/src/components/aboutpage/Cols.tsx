@@ -12,7 +12,7 @@ export default function Cols() {
         </h1>
         <div className="flex flex-row gap-4 md:gap-10 mt-2">
           <Link
-            className="rounded-lg w-32 md:w-32 animate-pulse md:mr-2"
+            className="rounded-lg w-20 md:w-20 lg:w-32 animate-pulse md:mr-2"
             href="https://www.linkedin.com/posts/leo2k_happy-to-announce-that-i-got-a-first-class-activity-7093219324294746112-SLsp?"
           >
             <Image
@@ -25,7 +25,7 @@ export default function Cols() {
             <h1 className="hidden md:block mt-2">Software Degree</h1>
           </Link>
           <Link
-            className="rounded-lg w-20 md:w-32 animate-pulse md:ml-2 mt-2 md:mt-0"
+            className="rounded-lg w-12 md:w-20 lg:w-32 animate-pulse md:ml-2 md:mt-0"
             href="https://bcert.me/bc/html/show-badge.html?b=hdffycdr"
           >
             <Image

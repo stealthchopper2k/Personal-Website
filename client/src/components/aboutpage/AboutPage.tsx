@@ -22,7 +22,7 @@ export default function AboutPage() {
         opacity: isInView ? 1 : 0,
       }}
     >
-      <div className="flex flex-col w-full md:flex-row gap-10 items-center justify-center p-16 md:p-16 xl:p-24 2xl:p-40">
+      <div className="flex flex-col w-full md:flex-row  items-center justify-center p-12 md:p-16 xl:p-20 2xl:p-40">
         <div className="w-full md:w-2/4 max-w-full max-h-screen">
           <h1 className="text-6xl whitespace-nowrap md:text-8xl mb-5 md:mb-10">
             About me
@@ -45,7 +45,7 @@ export default function AboutPage() {
           <Cols />
         </div>
         <div className="w-full md:w-2/4 h-4/4 flex justify-center items-center">
-          <motion.div className="items-center relative h-full">
+          <motion.div className="justify-center relative h-full">
             <ImageContainer backgroundImages={images} changing={false} />
           </motion.div>
         </div>
