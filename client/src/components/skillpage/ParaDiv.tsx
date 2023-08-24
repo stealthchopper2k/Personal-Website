@@ -35,10 +35,10 @@ export default function ParaDiv() {
         ease: [0, 0.71, 0.2, 1.01],
       }}
     >
-      <h1 className="text-white text-5xl mb-5 md:mb-10 sm:text-5xl md:text-6xl 2xl:text-8xl tracking-wide">
+      <h1 className="text-white text-5xl mb-10 sm:text-5xl md:text-6xl 2xl:text-8xl tracking-wide">
         4+ Years Experience In Fullstack Technologies
       </h1>
-      <h3 className="text-white text-2xl mb-5 md:mb-10 md:text-4xl tracking-wide">
+      <h3 className="text-white text-2xl mb-10 md:text-4xl tracking-wide">
         Including but not limited to:
       </h3>
       <motion.ul
@@ -120,9 +120,9 @@ export default function ParaDiv() {
           </span>
         </AnimatedButton>
       </motion.ul>
-      <h3 className="text-white text-2xl md:text-4xl tracking-wide mt-10">
+      {/* <h3 className="text-white text-2xl md:text-4xl tracking-wide mt-2 md:mt-10">
         Im always learning and improving!
-      </h3>
+      </h3> */}
     </motion.div>
   );
 }

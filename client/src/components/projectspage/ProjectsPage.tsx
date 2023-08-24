@@ -14,7 +14,7 @@ function ProjectsPage() {
   return (
     <div
       id={"projectspage"}
-      className="h-screen snap-start text-white bg-gray-900"
+      className="h-screen snap-mandatory snap-center text-white bg-gray-900"
       // ref={ref}
       // style={{
       //   transform: isInView ? "translateY(0)" : "translateX(-200px)",
@@ -22,7 +22,7 @@ function ProjectsPage() {
       //   opacity: isInView ? 1 : 0,
       // }}
     >
-      <div className="flex w-full h-full gap-10 items-start justify-start mt-10 p-16 lg:p-36">
+      <div className="flex w-full max-w-full max-h-screen items-start justify-start p-16 lg:p-36">
         <div className="flex flex-col items-start justify-start">
           <h1 className="text-5xl md:text-8xl tracking-wide mb-10">Projects</h1>
           <ProjComponent

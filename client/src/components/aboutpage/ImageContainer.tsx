@@ -50,7 +50,7 @@ export const ImageContainer = ({ backgroundImages, changing }: Props) => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           width={300}
           height={300}
-          className="w-full h-full rounded-xl"
+          className="w-full w-full rounded-xl"
         />
       )}
     </>

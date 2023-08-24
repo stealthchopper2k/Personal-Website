@@ -16,7 +16,7 @@ function MainComponent() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className="snap-y my-auto snap-mandatory h-screen snap-start flex-shrink-0 overflow-scroll">
+      <main className="snap-y snap-mandatory my-auto max-h-screen overflow-y-scroll will-change-auto flex-shrink-0">
         <Navbar />
         <FrontPage />
         <AboutPage />
@@ -27,5 +27,5 @@ function MainComponent() {
     </>
   );
 }
-
+// bg-gray-900
 export default MainComponent;

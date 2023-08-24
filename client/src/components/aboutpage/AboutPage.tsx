@@ -14,7 +14,7 @@ export default function AboutPage() {
   return (
     <div
       id={"aboutpage"}
-      className="h-screen snap-start text-white bg-gray-900"
+      className="h-screen snap-mandatory snap-center text-white bg-gray-900"
       ref={ref}
       // style={{
       //   transform: isInView ? "translateY(0)" : "translateX(-200px)",
@@ -22,9 +22,9 @@ export default function AboutPage() {
       //   opacity: isInView ? 1 : 0,
       // }}
     >
-      <div className="flex flex-col w-full md:flex-row  items-center justify-center p-16 md:p-16 xl:p-20 2xl:p-40">
-        <div className="w-full md:w-2/4 max-w-full max-h-screen">
-          <h1 className="text-6xl whitespace-nowrap md:text-8xl mb-5 md:mb-10">
+      <div className="flex flex-col max-w-full max-h-screen w-full md:flex-row items-center justify-center p-12 md:p-16 xl:p-20 2xl:p-40">
+        <div className="w-full md:w-2/4">
+          <h1 className="text-5xl whitespace-nowrap md:text-8xl mb-5 mt-16 md:mb-10">
             About me
           </h1>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
@@ -32,12 +32,12 @@ export default function AboutPage() {
               I have been a computer user since birth, and have always been
               tinkering around with the possibilities of digital products.
             </p>
-            <p className="flex text-start text-md md:text-2xl mt-6 flex-wrap">
+            <p className="flex text-start text-md md:text-2xl mt-3 md:mt-6 flex-wrap">
               As a recent graduate, most of my free time is spent exploring new
               software concepts, learning new technologies and building
               projects.
             </p>
-            <p className="flex text-start text-md md:text-2xl mt-6 flex-wrap">
+            <p className="flex text-start text-md md:text-2xl mt-3 md:mt-6 flex-wrap">
               I frequently participate in social events and sports to expand my
               network and maintain a healthy lifestyle.
             </p>
@@ -45,7 +45,7 @@ export default function AboutPage() {
           <Cols />
         </div>
         <div className="w-full md:w-2/4 h-4/4 flex justify-center items-center">
-          <motion.div className="justify-center relative h-full">
+          <motion.div className="flex justify-center relative h-full">
             <ImageContainer backgroundImages={images} changing={false} />
           </motion.div>
         </div>

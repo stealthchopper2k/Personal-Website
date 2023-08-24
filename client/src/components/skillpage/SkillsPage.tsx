@@ -11,7 +11,7 @@ function SkillsPage() {
   return (
     <div
       id={"skillpage"}
-      className="relative h-screen snap-start bg-gray-900"
+      className="relative h-screen snap-mandatory snap-center bg-gray-900"
       // ref={ref}
       // style={{
       //   transform: isInView ? "translateY(0)" : "translateX(-200px)",
@@ -19,8 +19,8 @@ function SkillsPage() {
       //   opacity: isInView ? 1 : 0,
       // }}
     >
-      <div className="flex flex-col items-center justify-center md:flex-row w-full h-full md:p-16">
-        <div className="flex items-start justify-start w-3/4">
+      <div className="flex flex-col items-center justify-center w-full h-full md:flex-row max-w-full max-h-screen md:p-16">
+        <div className="flex items-center justify-center w-3/4">
           <ParaDiv />
         </div>
         <div className="absolute bottom-10 right-10 md:relative md:flex md:items-start md:justify-start md:w-16">

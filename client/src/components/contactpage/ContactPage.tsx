@@ -9,7 +9,7 @@ export default function ContactPage() {
   return (
     <div
       id="contactpage"
-      className="h-screen snap-start text-white bg-gray-900"
+      className="h-screen snap-mandatory snap-center text-white bg-gray-900"
       // ref={ref}
       // style={{
       //   transform: isInView ? "translateY(0)" : "translateX(-200px)",
@@ -17,7 +17,7 @@ export default function ContactPage() {
       //   opacity: isInView ? 1 : 0,
       // }}
     >
-      <div className="flex flex-row w-full h-full gap-10 items-center justify-center mt-10 p-24">
+      <div className="flex flex-row w-full h-full gap-10 items-center justify-center p-24">
         <div className="flex flex-col items-center justify-center text-center">
           <h1 className="text-6xl md:text-8xl tracking-wide mb-10 whitespace-nowrap">
             Let&apos;s Talk!
