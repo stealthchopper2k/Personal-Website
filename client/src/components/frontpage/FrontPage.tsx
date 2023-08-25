@@ -4,21 +4,21 @@ import TitleUnderBar from "./TitleUnderBar";
 import { motion, useInView } from "framer-motion";
 
 function FrontPage() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
+  // const ref = useRef(null);
+  // const isInView = useInView(ref);
 
   return (
     <div
       id={"frontpage"}
-      className="h-screen snap-mandatory snap-center text-white bg-gray-900"
-      ref={ref}
-      style={{
-        transform: isInView ? "translateY(0)" : "translateX(-200px)",
-        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        opacity: isInView ? 1 : 0,
-      }}
+      className="h-screen snap-center snap-always bg-gray-900 will-change-auto"
+      // ref={ref}
+      // style={{
+      //   transform: isInView ? "translateY(0)" : "translateX(-200px)",
+      //   transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+      //   opacity: isInView ? 1 : 0,
+      // }}
     >
-      <div className="flex flex-col w-full h-full items-center justify-center mt-10">
+      <div className="flex flex-col w-full h-full items-center justify-center">
         <div className="text-center">
           <h1 className="text-white text-5xl whitespace-nowrap sm:text-7xl md:text-[6rem] xl:text-[8rem] 2xl:text-[10rem]">
             Leonids Jefimovs

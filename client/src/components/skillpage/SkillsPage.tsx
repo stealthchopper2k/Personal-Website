@@ -11,7 +11,7 @@ function SkillsPage() {
   return (
     <div
       id={"skillpage"}
-      className="relative h-screen snap-mandatory snap-center bg-gray-900"
+      className="relative h-screen snap-center snap-always bg-gray-900"
       // ref={ref}
       // style={{
       //   transform: isInView ? "translateY(0)" : "translateX(-200px)",

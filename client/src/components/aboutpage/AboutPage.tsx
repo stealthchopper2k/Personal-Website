@@ -14,7 +14,7 @@ export default function AboutPage() {
   return (
     <div
       id={"aboutpage"}
-      className="h-screen snap-mandatory snap-center text-white bg-gray-900"
+      className="h-screen snap-center snap-always text-white bg-gray-900"
       ref={ref}
       // style={{
       //   transform: isInView ? "translateY(0)" : "translateX(-200px)",
@@ -22,9 +22,9 @@ export default function AboutPage() {
       //   opacity: isInView ? 1 : 0,
       // }}
     >
-      <div className="flex flex-col max-w-full max-h-screen w-full md:flex-row items-center justify-center p-12 md:p-16 xl:p-20 2xl:p-40">
+      <div className="flex flex-col max-w-full max-h-screen w-full h-full md:flex-row items-center justify-center p-12 md:p-16 xl:p-20 2xl:p-40">
         <div className="w-full md:w-2/4">
-          <h1 className="text-5xl whitespace-nowrap md:text-8xl mb-5 mt-16 md:mb-10">
+          <h1 className="text-5xl whitespace-nowrap md:text-8xl mb-5 md:mb-10">
             About me
           </h1>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
