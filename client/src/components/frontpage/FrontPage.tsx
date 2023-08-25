@@ -10,7 +10,7 @@ function FrontPage() {
   return (
     <div
       id={"frontpage"}
-      className="h-screen snap-center snap-always bg-gray-900 will-change-auto"
+      className="h-screen w-screen snap-start snap-always bg-gray-900 will-change-auto"
       // ref={ref}
       // style={{
       //   transform: isInView ? "translateY(0)" : "translateX(-200px)",

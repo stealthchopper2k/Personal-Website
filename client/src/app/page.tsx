@@ -16,7 +16,7 @@ function MainComponent() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main className="snap-y snap-mandatory max-h-screen overflow-y-scroll will-change-auto">
+      <main className="md:snap-y md:snap-mandatory max-h-screen overflow-y-scroll will-change-auto">
         <Navbar />
         <FrontPage />
         <AboutPage />

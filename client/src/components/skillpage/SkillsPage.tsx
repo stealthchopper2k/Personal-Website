@@ -23,7 +23,7 @@ function SkillsPage() {
         <div className="flex items-center justify-center w-3/4">
           <ParaDiv />
         </div>
-        <div className="absolute bottom-10 right-10 md:relative md:flex md:items-start md:justify-start md:w-16">
+        <div className="absolute bottom-20 right-10 md:relative md:flex md:items-start md:justify-start md:w-16">
           <SpinnyBox />
         </div>
       </div>
