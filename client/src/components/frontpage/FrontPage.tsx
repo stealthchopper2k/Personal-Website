@@ -21,7 +21,7 @@ function FrontPage() {
       <div className="flex flex-col w-full h-full items-center justify-center">
         <div className="text-center">
           <h1 className="text-white text-5xl whitespace-nowrap sm:text-7xl md:text-[6rem] xl:text-[8rem] 2xl:text-[10rem]">
-            Leonids Jefimovs
+            Leo Jefimovs
           </h1>
           <motion.div
             className="relative"
