@@ -1,65 +1,63 @@
-"use client";
-import React, { useRef } from "react";
-import { useInView } from "framer-motion";
+import React from "react";
 import ProjComponent from "./ProjComponent";
 import Linkshare from "./Linkshare";
 import Adcon from "./Adcon";
 import { FaGithub } from "react-icons/fa";
 import { LiaGoogleDrive } from "react-icons/lia";
+import Excel from "./Excel";
+import LoansInFinance from "./PowerBI";
 
 function ProjectsPage() {
-  // const ref = useRef(null);
-  // const isInView = useInView(ref);
-
   return (
     <div
       id={"projectspage"}
-      className="h-screen snap-center snap-always text-white bg-gray-900"
-      // ref={ref}
-      // style={{
-      //   transform: isInView ? "translateY(0)" : "translateX(-200px)",
-      //   transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      //   opacity: isInView ? 1 : 0,
-      // }}
+      className="max-h-screen snap-center snap-always text-white bg-gray-900"
     >
-      <div className="flex w-full max-w-full max-h-screen items-start justify-start p-16 lg:p-36">
-        <div className="flex flex-col items-start justify-start">
-          <h1 className="text-5xl md:text-8xl tracking-wide mb-10">Projects</h1>
-          <ProjComponent
-            project_name="Linkshare"
-            img="/linkshare.png"
-            href="https://link-share.co.uk"
-            Icon={FaGithub}
-            IconColor="white"
-            description="A web-service using the cloud for storing and collaborating on
-          improved hyperlink pages."
-          >
-            <Linkshare />
-          </ProjComponent>
-          <ProjComponent
-            project_name="Industrial LTD"
-            img=""
-            Icon={LiaGoogleDrive}
-            IconColor="yellow"
-            href="https://drive.google.com/drive/u/0/folders/1_mlvhFu4QwqV5jv0-uZYGK_qL_esNR-Z"
-            description="A 28+ table database for a large company with thorough explanation and
-            examples."
-          >
-            <Adcon />
-          </ProjComponent>
-        </div>
+      <div className="flex flex-col items-start justify-start p-8 lg:p-16">
+          <h1 className="text-3xl ml-10 md:text-5xl tracking-wide mb-6">Projects</h1>
+        <ProjComponent
+          project_name="Linkshare"
+          img="/linkshare.png"
+          href="https://link-share.co.uk"
+          Icon={FaGithub}
+          IconColor="white"
+          description="A web-service using the cloud for storing and collaborating on improved hyperlink pages."
+        >
+          <Linkshare />
+        </ProjComponent>
+        <ProjComponent
+          project_name="Industrial LTD"
+          img=""
+          Icon={LiaGoogleDrive}
+          IconColor="yellow"
+          href="https://drive.google.com/drive/u/0/folders/1_mlvhFu4QwqV5jv0-uZYGK_qL_esNR-Z"
+          description="Designing, documenting, and deploying a 28+ table database with a thorough explanation and examples."
+        >
+          <Adcon />
+        </ProjComponent>
+        <ProjComponent
+          project_name="Transforming Quiz Data"
+          img=""
+          Icon={FaGithub}
+          IconColor=""
+          href="https://github.com/stealthchopper2k/Excel-Manipulation"
+          description="Cleaning and modeling quiz data into an actionable format using Excel, SQL, and Pandas."
+        >
+          <Excel />
+        </ProjComponent>
+        <ProjComponent
+          project_name="Exploratory Data Analysis"
+          img=""
+          Icon={FaGithub}
+          IconColor=""
+          href="https://github.com/stealthchopper2k/exploratory-data-analysis---customer-loans-in-finance"
+          description="Performing EDA on the loan portfolio, using various statistical and data visualization techniques to uncover patterns, relationships, and anomalies in the loan data."
+        >
+          <LoansInFinance />
+        </ProjComponent>
       </div>
     </div>
   );
 }
 
 export default ProjectsPage;
-{
-  /* <AnimatedButton>
-<li className="rounded-lg w-16 md:w-24">
-  <Link href="https://bcert.me/bc/html/show-badge.html?b=hdffycdr">
-    <Image src="/badge.png" alt="B Cert" width="100" height="100" />
-  </Link>
-</li>
-</AnimatedButton> */
-}

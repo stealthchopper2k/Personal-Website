@@ -33,7 +33,6 @@ const ColoredIcon: React.FC<IconProps> = ({ color, children }) => {
 
   return <span style={iconStyle}>{children}</span>;
 };
-
 export default function ProjComponent({
   href,
   Icon,
@@ -44,26 +43,31 @@ export default function ProjComponent({
   children,
 }: Props) {
   return (
-    <div className="flex flex-col md:flex-row md:items-start gap-5 mb-10 ">
+    <div className="flex flex-col md:items-start gap-5 mb-10">
       <div className="flex flex-col justify-between">
         <div className="flex flex-row justify-start items-center whitespace-nowrap">
           <AnimatedButton>
-            <a href={href} className="text-4xl">
+            <a href={href} className="text-3xl text-slate-300 md:4xl">
               {project_name}
             </a>
           </AnimatedButton>
-          {img && <Image src={img} alt={img} width={80} height={80} />}
-          <AnimatedButton>
-            <a href={href}>
-              <ColoredIcon color={IconColor}>
-                <Icon />
-              </ColoredIcon>
-            </a>
-          </AnimatedButton>
+          {img && <Image src={img} alt={img} width={40} height={40} />}
+          <div>
+            <AnimatedButton>
+              <a href={href}>
+                <ColoredIcon color={IconColor}>
+                  <Icon />
+                </ColoredIcon>
+              </a>
+            </AnimatedButton>
+          </div>
         </div>
-        <p className="text-xl mt-auto w-full md:w-full">{description}</p>
+        <li className="text-md md:text-xl mt-auto w-full md:w-full">{description}</li>
       </div>
-      <div className="flex flex-row flex-wrap gap-5">{children}</div>
+      <div className="flex flex-row flex-wrap gap-5">
+        {children}
+      </div>
     </div>
   );
 }
+

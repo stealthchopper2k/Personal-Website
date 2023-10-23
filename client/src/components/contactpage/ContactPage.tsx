@@ -9,7 +9,7 @@ export default function ContactPage() {
   return (
     <div
       id="contactpage"
-      className="h-screen snap-center snap-always text-white bg-gray-900"
+      className="max-h-screen snap-center snap-always text-white bg-gray-900"
       // ref={ref}
       // style={{
       //   transform: isInView ? "translateY(0)" : "translateX(-200px)",

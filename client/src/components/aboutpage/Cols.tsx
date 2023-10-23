@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function Cols() {
   return (
-    <div className="flex flex-col md:flex-row md:gap-10 md:mt-5 xl:mt-10">
+    <div className="flex flex-col ml-5 md:flex-row md:gap-10 md:mt-5 xl:mt-10">
       <div className="flex flex-col mb-5 md:mb-0 mt-5">
-        <h1 className="text-4xl md:text-4xl tracking-wide whitespace-nowrap mb-5 md:mb-2">
+        <h1 className="text-3xl md:text-4xl tracking-wide whitespace-nowrap mb-5 md:mb-2">
           Certifications
         </h1>
         <div className="flex flex-row gap-4 md:gap-10 mt-2">
@@ -39,7 +39,7 @@ export default function Cols() {
           </Link>
         </div>
       </div>
-      <div className="hidden lg:flex flex-col mt-5">
+      {/* <div className="hidden lg:flex flex-col mt-5">
         <h1 className="text-4xl md:text-4xl tracking-wide whitespace-nowrap mb-5">
           Skills
         </h1>
@@ -50,7 +50,7 @@ export default function Cols() {
           <span className="border rounded-md p-2">Attention to Detail</span>
           <span className="border rounded-md p-2">Willingness to Learn</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

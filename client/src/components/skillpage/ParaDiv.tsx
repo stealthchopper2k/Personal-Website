@@ -11,12 +11,14 @@ import { FiFigma } from "react-icons/fi";
 import { SiWebpack } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 import { SiTailwindcss } from "react-icons/si";
+import { SiPowerbi } from "react-icons/si"
+import {RiFileExcel2Fill} from "react-icons/ri"
 
 export const AnimatedButton = ({ children }) => (
   <motion.button
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}
-    className="flex flex-col justify-center items-center text-5xl md:text-7xl"
+    className="flex flex-col justify-center items-center text-3xl md:text-4xl"
   >
     {children}
   </motion.button>
@@ -36,7 +38,7 @@ export default function ParaDiv() {
       }}
     >
       <h1 className="text-white text-5xl mb-10 sm:text-5xl md:text-6xl 2xl:text-8xl tracking-wide">
-        4+ Years Experience In Fullstack Technologies
+        3+ Years Experience In Software and Data Technologies
       </h1>
       <h3 className="text-white text-2xl mb-10 md:text-4xl tracking-wide">
         Including but not limited to:
@@ -108,21 +110,24 @@ export default function ParaDiv() {
           </span>
         </AnimatedButton>
         <AnimatedButton>
-          <FiFigma color={"#ff0066"} />
-          <span className="hidden md:block text-white text-xl tracking-wide">
-            Figma
-          </span>
-        </AnimatedButton>
-        <AnimatedButton>
           <SiTailwindcss color={"#33ccff"} />
           <span className="hidden md:block text-white text-xl tracking-wide">
             Tailwind CSS
           </span>
         </AnimatedButton>
+        <AnimatedButton>
+          <SiPowerbi color={"yellow"} />
+          <span className="hidden md:block text-white text-xl tracking-wide">
+            Power BI
+          </span>
+        </AnimatedButton>
+        <AnimatedButton>
+          <RiFileExcel2Fill color={"green"} />
+          <span className="hidden md:block text-white text-xl tracking-wide">
+            Excel
+          </span>
+        </AnimatedButton>
       </motion.ul>
-      {/* <h3 className="text-white text-2xl md:text-4xl tracking-wide mt-2 md:mt-10">
-        Im always learning and improving!
-      </h3> */}
     </motion.div>
   );
 }
