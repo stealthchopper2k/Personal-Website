@@ -11,10 +11,10 @@ function ProjectsPage() {
   return (
     <div
       id={"projectspage"}
-      className="max-h-screen snap-center snap-always text-white bg-gray-900"
+      className="max-h-screen h-screen snap-center snap-always text-white bg-gray-900"
     >
       <div className="flex flex-col items-start justify-start p-8 lg:p-16">
-          <h1 className="text-3xl ml-10 md:text-5xl tracking-wide mb-6">Projects</h1>
+        <h1 className="text-3xl ml-10 md:text-5xl tracking-wide mb-6">Projects</h1>
         <ProjComponent
           project_name="Linkshare"
           img="/linkshare.png"

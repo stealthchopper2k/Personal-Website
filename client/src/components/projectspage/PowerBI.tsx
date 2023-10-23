@@ -10,25 +10,25 @@ export default function LoansInFinance() {
     <>
     <AnimatedButton>
     <SiPowerbi color={"yellow"} />
-    <span className="hidden md:block text-white text-xl tracking-wide">
+    <span className="hidden md:block text-white text-lg tracking-wide">
       Power BI
     </span>
       </AnimatedButton>
       <AnimatedButton>
           <SiPostgresql color="#3333ff" />
-          <span className="hidden md:block text-white text-xl tracking-wide">
+          <span className="hidden md:block text-white text-lg tracking-wide">
             PostgreSQL
           </span>
       </AnimatedButton>
       <AnimatedButton>
           <SiPandas color="white" />
-          <span className="hidden md:block text-white text-xl tracking-wide">
+          <span className="hidden md:block text-white text-lg tracking-wide">
             Pandas
           </span>
       </AnimatedButton>
       <AnimatedButton>
           <FcStatistics />
-          <span className="hidden md:block text-white text-xl tracking-wide">
+          <span className="hidden md:block text-white text-lg tracking-wide">
             Statistics
           </span>
       </AnimatedButton>

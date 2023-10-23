@@ -14,49 +14,49 @@ export default function Linkshare() {
     <>
       <AnimatedButton>
         <FaReact color={"#33ccff"} />
-        <span className="hidden md:block text-white text-xl tracking-wide">
+        <span className="hidden md:block text-white text-lg tracking-wide">
           React
         </span>
       </AnimatedButton>
       <AnimatedButton>
         <BiLogoJavascript color={"#FDDA0D"} />
-        <span className="hidden md:block text-white text-xl tracking-wide">
+        <span className="hidden md:block text-white text-lg tracking-wide">
           JavaScript
         </span>
       </AnimatedButton>
       <AnimatedButton>
         <LiaNode color="#009933" />
-        <span className="hidden md:block text-white text-xl tracking-wide">
+        <span className="hidden md:block text-white text-lg tracking-wide">
           NodeJS
         </span>
       </AnimatedButton>
       <AnimatedButton>
         <SiFirebase color="#FFA500" />
-        <span className="hidden md:block text-white text-xl tracking-wide">
+        <span className="hidden md:block text-white text-lg tracking-wide">
           Firebase
         </span>
       </AnimatedButton>
       <AnimatedButton>
         <BiLogoGoogleCloud color={"yellow"} />
-        <span className="hidden md:block text-white text-xl tracking-wide">
+        <span className="hidden md:block text-white text-lg tracking-wide">
           GCP
         </span>
       </AnimatedButton>
       <AnimatedButton>
         <BsGit color={"#ff0000"} />
-        <span className="hidden md:block text-white text-xl tracking-wide">
+        <span className="hidden md:block text-white text-lg tracking-wide">
           Git
         </span>
       </AnimatedButton>
       <AnimatedButton>
         <SiWebpack color={"#ADD8E6"} />
-        <span className="hidden md:block text-white text-xl tracking-wide">
+        <span className="hidden md:block text-white text-lg tracking-wide">
           Webpack
         </span>
       </AnimatedButton>
       <AnimatedButton>
         <SiTailwindcss color={"#33ccff"} />
-        <span className="hidden md:block text-white text-xl tracking-wide">
+        <span className="hidden md:block text-white text-lg tracking-wide">
           Tailwind
         </span>
       </AnimatedButton>

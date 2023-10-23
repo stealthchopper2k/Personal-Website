@@ -11,14 +11,14 @@ function SkillsPage() {
   return (
     <div
       id={"skillpage"}
-      className="relative h-screen snap-center snap-always bg-gray-900"
+      className="relative h-screen max-h-screen snap-center snap-always bg-gray-900"
     >
-      <div className="flex flex-col items-center justify-center w-full h-full md:flex-row max-w-full max-h-screen md:p-16">
-        <div className="flex items-center justify-center w-3/4">
+      <div className="flex flex-col items-center justify-center w-full h-full p-16 md:flex-row max-w-full max-h-screen">
+        <div className="flex items-center justify-center p-32">
           <ParaDiv />
+          <div className="hidden xl:flex items-start justify-start">
+            <SpinnyBox />
         </div>
-        <div className="absolute bottom-20 right-10 md:relative md:flex md:items-start md:justify-start md:w-16">
-          <SpinnyBox />
         </div>
       </div>
     </div>

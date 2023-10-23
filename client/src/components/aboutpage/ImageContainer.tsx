@@ -47,7 +47,7 @@ export const ImageContainer = ({ backgroundImages, changing }: Props) => {
         <Image
           alt={backgroundImages[0]}
           src={backgroundImages[0]}
-          sizes="(max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 70vw, (max-width: 1200px) 50vw, 33vw"
           width={250}
           height={250}
           className="w-full w-full rounded-xl"

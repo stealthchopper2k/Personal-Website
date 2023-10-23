@@ -18,7 +18,7 @@ export const AnimatedButton = ({ children }) => (
   <motion.button
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}
-    className="flex flex-col justify-center items-center text-3xl md:text-4xl"
+    className="flex flex-col justify-center items-center text-4xl md:text-4xl"
   >
     {children}
   </motion.button>

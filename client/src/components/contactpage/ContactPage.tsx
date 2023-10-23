@@ -9,13 +9,7 @@ export default function ContactPage() {
   return (
     <div
       id="contactpage"
-      className="max-h-screen snap-center snap-always text-white bg-gray-900"
-      // ref={ref}
-      // style={{
-      //   transform: isInView ? "translateY(0)" : "translateX(-200px)",
-      //   transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      //   opacity: isInView ? 1 : 0,
-      // }}
+      className="h-screen max-h-screen snap-center snap-always text-white bg-gray-900"
     >
       <div className="flex flex-row w-full h-full gap-10 items-center justify-center p-24">
         <div className="flex flex-col items-center justify-center text-center">

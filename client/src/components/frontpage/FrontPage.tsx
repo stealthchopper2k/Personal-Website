@@ -10,13 +10,7 @@ function FrontPage() {
   return (
     <div
       id={"frontpage"}
-      className="h-screen max-h-screen w-screen snap-start snap-always bg-gray-900 will-change-auto"
-      // ref={ref}
-      // style={{
-      //   transform: isInView ? "translateY(0)" : "translateX(-200px)",
-      //   transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      //   opacity: isInView ? 1 : 0,
-      // }}
+      className="h-screen max-h-screen snap-start snap-always bg-gray-900 will-change-auto"
     >
       <div className="flex flex-col w-full h-full items-center justify-center">
         <div className="text-center">

@@ -7,7 +7,7 @@ export default function Excel() {
     <>
     <AnimatedButton>
           <RiFileExcel2Fill color={"green"} />
-          <span className="hidden md:block text-white text-xl tracking-wide">
+          <span className="hidden text-md md:block text-white text-lg tracking-wide">
             Excel
           </span>
     </AnimatedButton>

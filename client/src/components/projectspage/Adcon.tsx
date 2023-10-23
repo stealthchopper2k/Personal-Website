@@ -9,7 +9,7 @@ export default function Adcon() {
     <>
       <AnimatedButton>
         <SiPostgresql color="#3333ff" />
-        <span className="hidden md:block text-white text-xl tracking-wide">
+        <span className="hidden md:block text-white text-lg tracking-wide">
           PostgreSQL
         </span>
       </AnimatedButton>
